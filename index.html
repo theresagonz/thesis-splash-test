@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to the splash</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to the splash</title>
 
-    <!-- Load styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/styles/index.css">
+        <!-- Load styles -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./src/styles/index.css">
 
-    <!-- Load Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-</head>
-<body>
-    <div id="main">
-        <nav class="navbar navbar-default navbar-nav">
-            <div class="navbar-brand">MyWebNow</div>
-            <div>
-                <a class="navbar-text" href="#">Home</a>
-                <a class="navbar-text" href="#">Why Us</a>
-                <a class="navbar-text" href="#">Contact us</a>
-                <a class="navbar-text" href="#">Login</a>
-                <button class="btn btn-default">Support</button>
-            </div>
-        </nav>
-    </div>
-</body>
+        <!-- Load Google fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-container">
+            <nav class="navbar navbar-default navbar-nav">
+                <div class="navbar-brand">MyWebNow</div>
+                <div>
+                    <a class="navbar-text" href="#">Home</a>
+                    <a class="navbar-text" href="#">Why Us</a>
+                    <a class="navbar-text" href="#">Contact us</a>
+                    <a class="navbar-text" href="#">Login</a>
+                    <button class="btn btn-default">Support</button>
+                </div>
+            </nav>
+            <main-content>
+                <main-headline>
+                    <h1>Get a website in 15 minutes <span class="green-text">or less</span></h1>
+                    <form class="form-inline">
+                        <input
+                            type="text"
+                            placeholder="Write your domain name here..."
+                            class="form-control" id="domain-name-input"
+                        />
+                        <input class="btn btn-success" type="button" value="Search"/>
+                    </form>
+                </main-headline>
+                <learn-more>
+                    <div class="small">LEARN HOW WE CAN ENHANCE YOUR BUSINESS</div>
+                    <button class="btn btn-success">&darr;</button>
+                </learn-more>
+                <our-services>
+                    <h3>Our Services</h3>
+                        <div class="our-services">
+                            <div class="row">
+                                <div class="service-card">bla</div>
+                                <div class="service-card">bla</div>
+                            </div>
+                            <div class="row">
+                                <div class="service-card">bla</div>
+                                <div class="service-card">bla</div>
+                            </div>
+                        </div>
+                    </div>
+                </our-services>
+            </main-content>
+        </div>
+    </body>
 </html>

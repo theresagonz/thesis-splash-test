@@ -1,0 +1,68 @@
+.page-container {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main-headline {
+    display: block;
+    margin: 60px;
+    text-align: center;
+    /* max-width: 10em; */
+}
+
+main-headline > h1 {
+    max-width: 10em;
+}
+
+.green-text {
+    color: #449D44;
+}
+
+learn-more {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+}
+
+learn-more > btn {
+    border-radius: 75%;
+}
+
+our-services {
+    display: block;
+    text-align: center;
+}
+
+.our-services {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-card {
+    margin: 20px;
+    width: 150px;
+    height: 125px;
+    background-color: #F8F9FA;
+    border: lightgray;
+}
+
+
+@media (max-width: 519px) {
+
+}
