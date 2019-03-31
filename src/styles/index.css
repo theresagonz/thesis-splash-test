@@ -2,10 +2,6 @@ body {
     font-family: 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
-.semi-bold {
-    font-weight: 500;
-}
-
 .normal {
     font-weight: 400;
 }
@@ -16,6 +12,10 @@ body {
 
 a {
     color: #fff;
+}
+
+a:hover {
+    color: #dfdfdf;
     text-decoration: none;
 }
 
@@ -28,44 +28,13 @@ a {
     color: lightgrey;
 }
 
-.bg {
+span {
     position: relative;
-    height: 365px;
-    padding: 4px;
-    background: #633eb7;
-    z-index: -1;
-  }
-  .bg:after,
-  .bg:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    height: 300px;
-    width: 100%;
-  }
-  .bg:before {
-    top: 33px;
-    height: 350px;
-    background: #7449D7;
-    transform: skewY(-10deg);
-  }
-  .bg:after {
-    /* top: 200px; */
-    bottom: 0;
-    height: 120px;
-    transform-origin: 100%;
-    background: #736FDF;
-    transform: skewY(-10deg);
-  }
-  span {
-    position: relative;
-  }
+}
 
 nav {
     display: flex;
     position: absolute;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
     margin: 25px 75px;
@@ -80,8 +49,12 @@ nav {
 }
 
 .nav-links > a {
-    color: #fff;
     margin-left: 15px;
+}
+
+.nav-links > a:hover {
+    margin-left: 15px;
+    color: #dfdfdf;
 }
 
 .nav-links > a:last-of-type {
@@ -157,23 +130,20 @@ learn-more > .btn {
 }
 
 .create-account > button {
-    color: white;
+    color: #fff;
     background-color: #736FDF;
     margin-top: 20px;
     font-size: 0.8em;
 }
 
 .create-account > button:hover {
-    color: white;
     background-color: #5d5ab5;
 }
 
 .our-services {
-    /* width: 96%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-width; 400px;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -216,7 +186,6 @@ learn-more > .btn {
 
 footer {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background: #5d5ab5;
@@ -245,14 +214,48 @@ footer {
     margin-bottom: 30px;
 }
 
-@media (max-width: 430px) {
-    main-content {
-        margin: 15px;
-    }
 
+/* BACKGROUND COLOR BLOCKING */
+
+.bg {
+    position: relative;
+    height: 330px;
+    padding: 4px;
+    background: #633eb7;
+    z-index: -1;
+  }
+
+.bg:after,
+.bg:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 100%;
+}
+
+.bg:before {
+    top: 33px;
+    height: 350px;
+    background: #7449D7;
+    transform: skewY(-10deg);
+}
+
+.bg:after {
+    bottom: -30px;
+    height: 100px;
+    transform-origin: 100%;
+    background: #736FDF;
+    transform: skewY(-10deg);
+}
+
+
+/* SMALL SCREENS */
+
+@media (max-width: 430px) {
     main-headline h1 {
         font-size: 2em;
-        /* padding: 0 15px; */
         max-width: 10em;
         margin: 2em auto 0.5em;
     }
@@ -270,12 +273,84 @@ footer {
 }
 
 
-@media (max-width: 775px) {
+/* SMALLER SCREENS - DISPLAY HAMBURGER INSTEAD OF LINKS */
+
+@media (max-width: 772px) {
     .nav-links {
         display: none;
     }
 
     .hamburger-dropdown {
         display: block;
+        margin-right: 40px;
+    }
+}
+
+
+/* SMALLER SCREENS - INCREASE COLOR BLOCKING RESPONSIVENESS */
+
+@media (max-width: 1065px) {
+    .bg {
+        position: relative;
+        height: 380px;
+        padding: 4px;
+        background: #633eb7;
+        z-index: -1;
+      }
+      
+      .bg:after,
+      .bg:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 300px;
+        width: 100%;
+      }
+    
+      .bg:before {
+        top: 33px;
+        height: 350px;
+        background: #7449D7;
+        transform: skewY(-10deg);
+      }
+    
+      .bg:after {
+        bottom: 0;
+        height: 110px;
+        transform-origin: 100%;
+        background: #736FDF;
+        transform: skewY(-10deg);
+      }
+}
+
+@media (max-width: 870px) {
+    .bg {
+        position: relative;
+        height: 400px;
+        padding: 4px;
+        background: #633eb7;
+        z-index: -1;
+      }
+}
+
+@media (max-width: 600px) {
+    nav {
+        margin: 20px;
+        top: 0;
+        width: 85vw;
+        color: #fff;
+    }
+
+    .hamburger-dropdown {
+        margin: 10px;
+    }
+
+    .bg {
+        position: relative;
+        height: 430px;
+        padding: 4px;
+        background: #633eb7;
+        z-index: -1;
     }
 }
