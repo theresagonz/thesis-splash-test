@@ -19,14 +19,22 @@
     </head>
     <body>
         <div id="page-container">
-            <nav class="navbar navbar-default navbar-nav navbar-expand-lg">
+            <div class="bg"></div>
+            <nav>
                 <div class="navbar-brand">MyWebNow</div>
-                <div class="collapse navbar-collapse">
-                    <a class="navbar-text" href="#">Home</a>
-                    <a class="navbar-text" href="#">Why Us</a>
-                    <a class="navbar-text" href="#">Contact us</a>
-                    <a class="navbar-text" href="#">Login</a>
-                    <button class="btn btn-default">Support</button>
+                <div class="nav-links collapse navbar-collapse">
+                    <a href="#">Home</a>
+                    <a href="#">Why Us</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Login</a>
+                    <button class="btn btn-success">Support</button>
+                </div>
+                <div class="hamburger-dropdown">
+                    <span id="closebtn">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </span>
                 </div>
             </nav>
             <main-content>
@@ -43,35 +51,51 @@
                         </form>
                     </div>
                 </main-headline>
-                <learn-more>
+                <learn-more class="lg-top-margin">
                     <div class="small">LEARN HOW WE CAN ENHANCE YOUR BUSINESS</div>
                     <button class="btn btn-success btn-lg">&darr;</button>
                 </learn-more>
-                <our-services>
+                <div class="create-account">
+                    <div>Put a bird on it farm-to-table tumblr DIY ennui selvage adaptogen bitters brooklyn thundercats organic blog whatever street art. Gastropub chambray cardigan, biodiesel helvetica.</div>
+                    <button class="btn" type="submit">CREATE YOUR ACCOUNT</button>
+                </div>
+                <div class="lg-top-margin">
                     <h4>Our Services</h4>
-                        <div class="our-services">
-                            <div class="row">
-                                <div class="service-card col-md-6">
-                                    <img src="./src/assets/cat.jpg" alt="Cat pic">
-                                </div>
-                                <div class="service-card col-md-6">
-                                    <img src="./src/assets/cat.jpg" alt="Cat pic">
-                                    <div class="col">
+                    <div class="our-services">
 
-                                    </div>
+                            <div class="service-card col-lg-6">
+                                <img src="./src/assets/cat.jpg" alt="Cat pic">
+                                <div class="service-card-text">
+                                    <div>WEB HOSTING</div>
+                                    <p>Semiotics beard tilde keytar cronut hashtag hell of lomo waistcoat master cleanse drinking vinegar shoreditch</p>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="service-card col">
-                                    <img class="col" src="./src/assets/cat.jpg" alt="Cat pic">
-                                </div>
-                                <div class="service-card col">
-                                    <img class="col" src="./src/assets/cat.jpg" alt="Cat pic">
+                            <div class="service-card col-lg-6">
+                                <img src="./src/assets/cat.jpg" alt="Cat pic">
+                                <div class="service-card-text">
+                                    <div>WEB HOSTING</div>
+                                    <p>Semiotics beard tilde keytar cronut hashtag hell of lomo waistcoat master cleanse drinking vinegar shoreditch</p>
                                 </div>
                             </div>
-                        </div>
+
+
+                            <div class="service-card col">
+                                <img class="col" src="./src/assets/cat.jpg" alt="Cat pic">
+                                <div class="service-card-text">
+                                    <div>WEB HOSTING</div>
+                                    <p>Semiotics beard tilde keytar cronut hashtag hell of lomo waistcoat master cleanse drinking vinegar shoreditch</p>
+                                </div>
+                            </div>
+                            <div class="service-card col">
+                                <img class="col" src="./src/assets/cat.jpg" alt="Cat pic">
+                                <div class="service-card-text">
+                                    <div>WEB HOSTING</div>
+                                    <p>Semiotics beard tilde keytar cronut hashtag hell of lomo waistcoat master cleanse drinking vinegar shoreditch</p>
+                                </div>
+                            </div>
+
                     </div>
-                </our-services>
+                </div>
             </main-content>
         </div>
     </body>
