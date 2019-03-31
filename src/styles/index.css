@@ -1,3 +1,15 @@
+body {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.semi-bold {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 100;
+}
+
 .page-container {
     margin: 0;
     padding: 0;
@@ -39,7 +51,6 @@
   }
   span {
     position: relative;
-    z-index: 2;
   }
 
 nav {
@@ -78,6 +89,7 @@ main-content {
     position: absolute;
     top: 40px;
     width: 100%;
+    height: 100vh;
     text-align: center;
     margin: 25px auto;
 }
@@ -102,6 +114,10 @@ main-headline input:first-of-type {
 .lg-top-margin {
     display: block;
     margin-top: 100px;
+}
+
+.sm-bottom-margin {
+    margin-bottom: 7px;
 }
 
 .green-text {
@@ -140,7 +156,7 @@ learn-more > .btn {
 
 .create-account > button:hover {
     color: white;
-    background-color: rgb(93, 90, 181);
+    background-color: #5d5ab5;
 }
 
 .our-services {
@@ -188,7 +204,6 @@ learn-more > .btn {
     border-radius:15%;
     transition: all .3s;
   }
-
 
 @media (max-width: 430px) {
     main-content {
