@@ -148,12 +148,15 @@ learn-more > .btn {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-width; 400px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .service-card {
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 12px;
     width: 300px;
     height: 125px;
     background-color: #F8F9FA;
@@ -163,8 +166,8 @@ learn-more > .btn {
 }
 
 .service-card img {
-    width: 15vmin;
-    height: 9vmin;
+    width: 60px;
+    height: 40px;
 }
 
 .service-card-text {
@@ -176,7 +179,7 @@ learn-more > .btn {
 
 .line1, .line2, .line3 {
     margin-top:5px;
-    background-color: #333;
+    background-color: #fff;
     width:25px;
     height:3px;
     display:block;
