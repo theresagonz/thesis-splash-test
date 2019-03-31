@@ -27,8 +27,22 @@ main-headline h1 {
     margin: 2em auto 0.5em;
 }
 
+main-headline input:first-of-type {
+    max-width: 250px;
+    min-width: 100px;
+}
+
 .green-text {
     color: #449D44;
+}
+
+.domain-name-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    display: inline-block;
 }
 
 learn-more {
